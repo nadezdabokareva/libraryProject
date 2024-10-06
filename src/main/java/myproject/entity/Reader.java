@@ -1,4 +1,4 @@
-package myproject.testBookProject.entity;
+package myproject.entity;
 
 import java.util.List;
 import java.util.UUID;
@@ -8,7 +8,7 @@ public class Reader {
     private UUID readerId;
     private List<Book> borrowedBooks;
 
-    public Reader() {
+    public Reader(String name) {
     }
 
     public Reader(String name, List<Book> borrowedBooks) {

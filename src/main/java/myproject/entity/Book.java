@@ -1,4 +1,4 @@
-package myproject.testBookProject.entity;
+package myproject.entity;
 
 public class Book {
     //static не ставлю, так как у каждой книги будут уникальные значения полей, указанных в классе

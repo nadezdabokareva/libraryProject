@@ -1,7 +1,7 @@
-package myproject.testBookProject.dto;
+package myproject.dto;
 
-import myproject.testBookProject.entity.Book;
-import myproject.testBookProject.entity.Reader;
+import myproject.entity.Book;
+import myproject.entity.Reader;
 
 import java.util.ArrayList;
 import java.util.List;

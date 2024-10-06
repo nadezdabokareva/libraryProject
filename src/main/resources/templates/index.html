@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека</title>
+</head>
+<body>
+<h1>Добавить книгу</h1>
+<form action="/addBook" method="post">
+    <label>Название:</label>
+    <input type="text" name="title" required>
+    <label>Автор:</label>
+    <input type="text" name="author" required>
+    <button type="submit">Добавить книгу</button>
+</form>
+
+<h1>Зарегистрировать читателя</h1>
+<form action="/registerReader" method="post">
+    <label>Имя читателя:</label>
+    <input type="text" name="name" required>
+    <button type="submit">Зарегистрировать</button>
+</form>
+
+<h2>Список книг:</h2>
+<ul>
+    <th:block th:each="book : ${books}">
+        <li th:text="${book.title}">Книга</li>
+    </th:block>
+</ul>
+</body>
+</html>
